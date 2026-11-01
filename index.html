@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Homepage</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Urban Style</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+
+            <div class="cart-summary">
+                <span id="cart-counter" aria-live="polite">Cart (0)</span>
+                <span id="cart-subtotal" aria-live="polite">Subtotal: $0.00</span>
+                <span id="cart-vat" aria-live="polite">VAT incl.: $0.00</span>
+                <button id="clear-cart-button">Clear cart</button>
+
+                <div id="cart-items" aria-live="polite"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Discover your next favorite product</h2>
+            <p>Explore curated products with a simple and smooth shopping experience.</p>
+            <a href="#products">Shop now</a>
+        </section>
+
+        <section class="filters">
+            <button class="active" data-category="all">All</button>
+            <button data-category="men's clothing">Men</button>
+
+            <button data-category="women's clothing">Women</button>
+
+            <button data-category="jewelery">Jewelry</button>
+
+            <button data-category="electronics">Electronics</button>
+
+            <button data-category="backpacks">Backpacks</button>
+        </section>
+        
+        <section id="products">
+        </section>
+    </main>
+
+    <footer>
+        <p>Urban Style</p>
+
+        <p>&copy; 2026 Urban Style. All rights reserved.</p>
+    </footer>   
+ 
+    <script type="module" src="main.js"></script>   
+</body>
+</html>
